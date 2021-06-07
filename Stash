@@ -1,0 +1,47 @@
+***********************GIT stash commands******
+
+
+  125  cd singaporegit/
+  126  ls
+  128  touch demofile
+  129  git add .
+  135  ls
+  136  git add .
+  137  git commit -m "demo"
+  138  git branch
+  139  vi demofile
+"fisst code(testing)
+  140  git stash
+  141  vi demofile
+  142  cat demofile
+  143  git stash list
+  144  vi demofile
+  145  cat demofile
+  146  git stash
+  147  git stash list
+  148  cat demofile
+  149  git stash apply stash@{1}
+  151  cat demofile
+  152  git add .
+  153  git commit -m "demo1 first code done"
+  154  git stash apply stash@{0}
+  155  vi demofile
+  156  git add .
+  157  git commit -m "demo2second code done"
+  158  git status
+  159  git log --oneline
+  160  git stash list
+  161  git stash clear
+  162  git stash list
+*****Git reset staging arear*******************
+
+  166  cat >testfile
+  167  git add .
+  168  git status
+  169  git reset .
+  170  git status
+  171  git add .
+  173  git reset --hard(remove from staging)
+  174  git status
+  175  histroy
+  176  history
